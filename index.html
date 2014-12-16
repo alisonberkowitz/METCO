@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="app.css">
+    <link type="text/css" rel="stylesheet" href="simple-sidebar.css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>   
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -16,15 +17,35 @@
     <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-    <div id="sidebar">
-        <h1>METCO</h1>
-        <p>Say something here</p>
-        <ul>
-            <li>Story 1</li>
-            <li>Story 2</li>
-            <li>Story 3</li>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    METCO
+                </a>
+            </li>
+            <li>
+                <p>Say something here</p>
+            </li>
+            <li>
+                <a href="#">Story 1</a>
+            </li>
+            <li>
+                <a href="#">Story 2</a>
+            </li>
+            <li>
+                <a href="#">Story 3</a>
+            </li>
+            <li>
+                <a href="#">Story 4</a>
+            </li>
+            <li>
+                <a href="#">Story 5</a>
+            </li>
         </ul>
     </div>
+    <!-- /#sidebar-wrapper -->
     <div id="map-canvas"></div>
 </body>
 </html>
