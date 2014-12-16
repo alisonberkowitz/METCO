@@ -16,10 +16,18 @@ function initialize() {
 }
 
 function plotAddress (address) {
+	var infowindow = new google.maps.InfoWindow({
+	    content: '<h1>'+address.name+'</h1>'+
+	    	'<h3>METCO Student Enrollment: '+ address.enrollment + '</h3>'
+	});
 	var marker = new google.maps.Marker({
 		        map: map,
-		        position: new google.maps.LatLng(address.lat,address.lng)
+		        position: new google.maps.LatLng(address.lat,address.lng),
+		        title: address.name
 		    });
+	google.maps.event.addListener(marker, 'click', function() {
+    	infowindow.open(map,marker);
+  	});
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
