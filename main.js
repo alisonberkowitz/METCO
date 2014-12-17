@@ -12,6 +12,13 @@ function hideBos() {
 	document.getElementById('boston-dem').style.display = "none";
 }
 
+function showRefs() {
+	document.getElementById('refs').style.display = "block";
+}
+function hideRefs() {
+	document.getElementById('refs').style.display = "none";
+}
+
 var map;
 var geocoder;
 function initialize() {

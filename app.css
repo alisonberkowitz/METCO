@@ -35,3 +35,11 @@ body table {
 	z-index: 1000;
 	display: none;
 }
+
+#refs {
+	position: absolute;
+	bottom: 0px;
+	left: 320px;
+	z-index: 1000;
+	display: none;
+}
