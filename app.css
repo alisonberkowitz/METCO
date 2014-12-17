@@ -1,3 +1,37 @@
-html { height: 100% }
-body { height: 100%; margin: 0; padding: 0 }
-#map-canvas { height: 100%; width: 84%; right: 0; position: absolute; }
+html { 
+	height: 100% 
+}
+
+body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body table {
+	background: #999999;
+}
+
+#map-canvas { 
+	height: 100%; 
+	width: 80%; 
+	right: 0; 
+	position: absolute; 
+}
+
+#METCO-dem {
+	position: absolute;
+	top: 500px;
+	left: 320px;
+	z-index: 1000;
+	display: none;
+}
+
+#boston-dem {
+	position: absolute;
+	top: 500px;
+	left: 320px;
+	z-index: 1000;
+	display: none;
+}
